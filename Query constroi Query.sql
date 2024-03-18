@@ -1,0 +1,2 @@
+SELECT distinct 'GRANT SELECT ON ' + NAME + ' TO Role_DW_Select'
+FROM SYSOBJECTS WHERE type = 'U' AND NAME LIKE 'F_%'

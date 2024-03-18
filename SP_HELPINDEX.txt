@@ -1,0 +1,7 @@
+sp_who2 active
+
+
+select * from sysindexes
+where id = (select object_id ('F_Vendas_Mensal_Ag'))
+
+sp_helpindex F_Vendas_Mensal_Ag
